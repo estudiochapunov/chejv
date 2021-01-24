@@ -1,0 +1,130 @@
+
+<html>
+   <head>
+      <meta HTTP-EQUIV='Pragma' CONTENT='no-cache'>
+      <link rel="stylesheet" href='stylemain.css' type='text/css'>
+         <link rel="stylesheet" href='colors.css' type='text/css'>
+            <script language="javascript" src="util.js"></script>
+            <script language="javascript">
+<!-- hide
+
+if ( wlRefresh == '1' ) {
+   var code = 'location="wlcfgrefresh.wl?wlRefresh=0"';
+   eval(code);
+}
+
+
+// done hiding -->
+      </script>
+   </head>
+   <body onLoad='frmLoad()'>
+      <blockquote>
+         <form onSubmit='return false'>
+            <b>Scan Results</b>
+           <div id="divScanAp">
+              <table border="0" cellpadding="4" cellspacing="0">
+               <tr> <td align="center">
+               <input type='button' onClick='document.location.reload()' value='Refresh'>
+               </td> </tr>
+              </table>
+           </div>
+           <div id="wlScanResults">
+              <br><b>Nearby Wireless Access Points:</b><br>
+              <table id="wlScanTbl" border="0" cellpadding="4" cellspacing="0">
+                 <tr> <td>
+                 <table border='1' cellpadding='2' cellspacing='0' align="left" >
+                    <tr>
+                       <td class='hd' valign="middle" align="center" width="30" height="30" >Network Name</td>
+                       <td class='hd' valign="middle" align="center" width="18" height="30" >Security Mode</td>
+                       <td class='hd' valign="middle" align="center" width="10" height="30" >Mode</td>
+                       <td class='hd' valign="middle" align="center" width="10" height="30" >PHY Mode</td>
+                       <td class='hd' valign="middle" align="center" width="10" height="30" >RSSI</td>
+                       <td class='hd' valign="middle" align="center" width="15" height="30" >Channel</td>
+                       <td class='hd' valign="middle" align="center" width="10" height="30" >Bandwidth</td>
+                       <td class='hd' valign="middle" align="center" width="20" height="30" >BSSID</td>
+                    </tr>
+                       <td><input type='text' name='wlScanSsid0' maxlength='32' size='32' value='napoleon'></td> 
+<td><input type='text' name='wlScanSecurity0' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP '></td> 
+<td><input type='text' name='wlScanCapability0' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType0' maxlength='10' size='10' value='802.11n'></td> 
+<td><input type='text' name='wlScanRssi0' maxlength='10' size='10' value='-55 dBm'></td> 
+<td><input type='text' name='wlScanChannel0' maxlength='15' size='15' value='6'></td> 
+<td><input type='text' name='wlScanBandwidth0' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid0' maxlength='20' size='20' value='84:aa:9c:95:10:7b'></td></tr> 
+ 
+<td><input type='text' name='wlScanSsid1' maxlength='32' size='32' value=''></td> 
+<td><input type='text' name='wlScanSecurity1' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP '></td> 
+<td><input type='text' name='wlScanCapability1' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType1' maxlength='10' size='10' value='802.11n'></td> 
+<td><input type='text' name='wlScanRssi1' maxlength='10' size='10' value='-64 dBm'></td> 
+<td><input type='text' name='wlScanChannel1' maxlength='15' size='15' value='6'></td> 
+<td><input type='text' name='wlScanBandwidth1' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid1' maxlength='20' size='20' value='fa:8f:ca:82:cc:d4'></td></tr> 
+ 
+<td><input type='text' name='wlScanSsid2' maxlength='32' size='32' value='TeleCentro-5a7b'></td> 
+<td><input type='text' name='wlScanSecurity2' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP  TKIP '></td> 
+<td><input type='text' name='wlScanCapability2' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType2' maxlength='10' size='10' value='802.11ac'></td> 
+<td><input type='text' name='wlScanRssi2' maxlength='10' size='10' value='-72 dBm'></td> 
+<td><input type='text' name='wlScanChannel2' maxlength='15' size='15' value='11'></td> 
+<td><input type='text' name='wlScanBandwidth2' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid2' maxlength='20' size='20' value='d0:6e:de:72:5a:80'></td></tr> 
+ 
+<td><input type='text' name='wlScanSsid3' maxlength='32' size='32' value='TeleCentro Wifi'></td> 
+<td><input type='text' name='wlScanSecurity3' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP  TKIP '></td> 
+<td><input type='text' name='wlScanCapability3' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType3' maxlength='10' size='10' value='802.11ac'></td> 
+<td><input type='text' name='wlScanRssi3' maxlength='10' size='10' value='-69 dBm'></td> 
+<td><input type='text' name='wlScanChannel3' maxlength='15' size='15' value='11'></td> 
+<td><input type='text' name='wlScanBandwidth3' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid3' maxlength='20' size='20' value='d2:6e:de:72:5b:82'></td></tr> 
+ 
+<td><input type='text' name='wlScanSsid4' maxlength='32' size='32' value='Fibertel WiFi691 2.4GHz'></td> 
+<td><input type='text' name='wlScanSecurity4' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP  TKIP '></td> 
+<td><input type='text' name='wlScanCapability4' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType4' maxlength='10' size='10' value='802.11ac'></td> 
+<td><input type='text' name='wlScanRssi4' maxlength='10' size='10' value='-92 dBm'></td> 
+<td><input type='text' name='wlScanChannel4' maxlength='15' size='15' value='11'></td> 
+<td><input type='text' name='wlScanBandwidth4' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid4' maxlength='20' size='20' value='30:93:bc:ba:f3:0f'></td></tr> 
+ 
+<td><input type='text' name='wlScanSsid5' maxlength='32' size='32' value='Susana wifi'></td> 
+<td><input type='text' name='wlScanSecurity5' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP '></td> 
+<td><input type='text' name='wlScanCapability5' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType5' maxlength='10' size='10' value='802.11n'></td> 
+<td><input type='text' name='wlScanRssi5' maxlength='10' size='10' value='-86 dBm'></td> 
+<td><input type='text' name='wlScanChannel5' maxlength='15' size='15' value='1'></td> 
+<td><input type='text' name='wlScanBandwidth5' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid5' maxlength='20' size='20' value='84:aa:9c:94:8c:19'></td></tr> 
+ 
+<td><input type='text' name='wlScanSsid6' maxlength='32' size='32' value='Sara 2.4GHz'></td> 
+<td><input type='text' name='wlScanSecurity6' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP  TKIP '></td> 
+<td><input type='text' name='wlScanCapability6' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType6' maxlength='10' size='10' value='802.11ac'></td> 
+<td><input type='text' name='wlScanRssi6' maxlength='10' size='10' value='-79 dBm'></td> 
+<td><input type='text' name='wlScanChannel6' maxlength='15' size='15' value='1'></td> 
+<td><input type='text' name='wlScanBandwidth6' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid6' maxlength='20' size='20' value='08:d5:9d:63:5b:5e'></td></tr> 
+ 
+<td><input type='text' name='wlScanSsid7' maxlength='32' size='32' value=''></td> 
+<td><input type='text' name='wlScanSecurity7' maxlength='18' size='18' value='WPA2-PSK  AES-CCMP  TKIP '></td> 
+<td><input type='text' name='wlScanCapability7' maxlength='10' size='10' value='Managed'></td> 
+<td><input type='text' name='wlScanPhyType7' maxlength='10' size='10' value='802.11n'></td> 
+<td><input type='text' name='wlScanRssi7' maxlength='10' size='10' value='-48 dBm'></td> 
+<td><input type='text' name='wlScanChannel7' maxlength='15' size='15' value='6'></td> 
+<td><input type='text' name='wlScanBandwidth7' maxlength='10' size='10' value='20 MHz'></td> 
+<td><input type='text' name='wlScanBssid7' maxlength='20' size='20' value='fa:8f:ca:88:62:cd'></td></tr> 
+ 
+
+                 </table>
+                 </td></tr>
+              </table>
+           <br>
+           <br>
+           </div>
+           <br>
+
+         </form>
+      </blockquote>
+   </body>
+</html>
