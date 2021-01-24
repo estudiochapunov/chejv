@@ -37,7 +37,7 @@
 Contact Us
 </span>
 <div class="wrap-input100 validate-input bg1" data-validate="Escribe por favor tu nombre">
-<span class="label-input100">FULL NAME *</span>
+<span class="label-input100">NOMBRE COMPLETO *</span>
 <input class="input100" type="text" name="name" placeholder="Escribe tu nombre">
 </div>
 <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Escribe por favor tu email (e@a.x)">
@@ -45,14 +45,14 @@ Contact Us
 <input class="input100" type="text" name="email" placeholder="Escribe tu Email ">
 </div>
 <div class="wrap-input100 bg1 rs1-wrap-input100">
-<span class="label-input100">Phone</span>
+<span class="label-input100">Teléfono</span>
 <input class="input100" type="text" name="phone" placeholder="Escribe tu número telefónico">
 </div>
 <div class="wrap-input100 input100-select bg1">
 <span class="label-input100">Servicios que necesita *</span>
 <div>
 <select class="js-select2" name="servicio">
-<option>Please chooses</option>
+<option>Por favor elija una</option>
 <option>Carpeta documental para Ciudadanía italiana</option>
 <option>Carpeta documental para otra ciudadanía europea</option>
 <option>Carpeta documental para jubilaciones/pensiones en el país</option>
@@ -103,7 +103,7 @@ $<span id="value-lower">10</span> - $<span id="value-upper">100</span>
 <div class="container-contact100-form-btn">
 <button class="contact100-form-btn">
 <span>
-Submit
+Enviar
 <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
 </span>
 </button>
@@ -130,7 +130,7 @@ Submit
 
 			$(".js-select2").each(function(){
 				$(this).on('select2:close', function (e){
-					if($(this).val() == "Please chooses") {
+					if($(this).val() == "Por favor elija una") {
 						$('.js-show-service').slideUp();
 					}
 					else {
